@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="__f-nAbTREfC4tfyc6Uah0w" label="TALEND_Best_Practise" description="TALEND Best Practise" language="java" technicalLabel="TALEND_BEST_PRACTISE" author="__f-nArTREfC4tfyc6Uah0w" productVersion="Talend Cloud Data Fabric-8.0.1.20250927_1321-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/pietergroenewoud/TALEND_Best_Practise.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="__hqpELTREfC4tfyc6Uah0w" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="__f-nArTREfC4tfyc6Uah0w" login="pieter.groenewoud@nfr.hicogroup.com" firstName="Pieter" lastName="Groenewoud" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyQLTSEfC3xejpMATRKg" login="benjamingnaedig@nfr.hicogroup.com" firstName="Ben" lastName="Gnädig" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyQbTSEfC3xejpMATRKg" login="perparim.mjeku@nfr.hicogroup.com" firstName="Perparim" lastName="Mjeku" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyQrTSEfC3xejpMATRKg" login="mischa.kaltz@nfr.hicogroup.com" firstName="Mischa" lastName="Kaltz" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyQ7TSEfC3xejpMATRKg" login="florim.mjekiqi@nfr.hicogroup.com" firstName="Florim" lastName="Mjekiqi" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyRLTSEfC3xejpMATRKg" login="kastriot.dogani@nfr.hicogroup.com" firstName="Kastriot" lastName="Dogani" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyRbTSEfC3xejpMATRKg" login="donit.mjekiqi@nfr.hicogroup.com" firstName="Donit" lastName="Mjekiqi" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyRrTSEfC3xejpMATRKg" login="siphesihle.mxinwa@nfr.hicogroup.com" firstName="Siphesihle" lastName="Mxinwa" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyR7TSEfC3xejpMATRKg" login="tobias.niessner@nfr.hicogroup.com" firstName="Tobias" lastName="Nießner" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fySLTSEfC3xejpMATRKg" login="kevin.hilzinger@nfr.hicogroup.com" firstName="Kevin" lastName="Hilzinger" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fySbTSEfC3xejpMATRKg" login="arthur.kirsch@nfr.hicogroup.com" firstName="Arthur" lastName="Kirsch" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fySrTSEfC3xejpMATRKg" login="akin.ayguen@nfr.hicogroup.com" firstName="Akin" lastName="Ayguen" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyS7TSEfC3xejpMATRKg" login="karl.hotz@nfr.hicogroup.com" firstName="Karl" lastName="Hotz" type="DQ"/>
+  <TalendProperties:User xmi:id="_G5fyTLTSEfC3xejpMATRKg" login="siphesihle.ndaba@nfr.hicogroup.com" firstName="Siphesihle" lastName="Ndaba" type="DQ"/>
+</xmi:XMI>
