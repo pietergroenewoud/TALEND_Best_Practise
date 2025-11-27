@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="folder_basis" prompt="folder_basis?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s0J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="folder_contextfile" prompt="folder_contextfile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/khr/Documents/3_Projekte/XXX/context.csv&quot;" internalId="_JL-s0Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="LoginToken" prompt="LoginToken?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s0p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_api_token" prompt="mailchimp_api_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s050ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_list_id" prompt="mailchimp_list_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s1J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_url_api" prompt="mailchimp_url_api?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s1Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="medidata_folder_responses" prompt="medidata_folder_responses?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s1p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="moodlewsrestformat" prompt="moodlewsrestformat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s150ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_business_unit" prompt="tocco_business_unit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s2J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_order_pk" prompt="tocco_order_pk?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s2Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_password" prompt="tocco_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s2p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_url_api" prompt="tocco_url_api?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s250ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_user" prompt="tocco_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s3J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_create_course" prompt="wsfunction_create_course?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s3Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_create_user" prompt="wsfunction_create_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s3p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_enrol" prompt="wsfunction_enrol?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s350ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_get_course" prompt="wsfunction_get_course?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s4J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_get_user" prompt="wsfunction_get_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s4Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wstoken" prompt="wstoken?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s4p0ZEfCYuPfYOu7yaw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="test">
+    <contextParameter comment="" name="folder_basis" prompt="folder_basis?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s450ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="folder_contextfile" prompt="folder_contextfile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/khr/Documents/3_Projekte/XXX/context.csv&quot;" internalId="_JL-s5J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="LoginToken" prompt="LoginToken?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s5Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_api_token" prompt="mailchimp_api_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s5p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_list_id" prompt="mailchimp_list_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s550ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="mailchimp_url_api" prompt="mailchimp_url_api?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s6J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="medidata_folder_responses" prompt="medidata_folder_responses?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s6Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="moodlewsrestformat" prompt="moodlewsrestformat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s6p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_business_unit" prompt="tocco_business_unit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s650ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_order_pk" prompt="tocco_order_pk?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s7J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_password" prompt="tocco_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s7Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_url_api" prompt="tocco_url_api?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL-s7p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="tocco_user" prompt="tocco_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T4J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_create_course" prompt="wsfunction_create_course?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T4Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_create_user" prompt="wsfunction_create_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T4p0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_enrol" prompt="wsfunction_enrol?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T450ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_get_course" prompt="wsfunction_get_course?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T5J0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wsfunction_get_user" prompt="wsfunction_get_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T5Z0ZEfCYuPfYOu7yaw"/>
+    <contextParameter comment="" name="wstoken" prompt="wstoken?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JL_T5p0ZEfCYuPfYOu7yaw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="694" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Z+o58E+A899676nRVHEMsAs8j21c+DoTR2z+wib2" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0kSTgLj0kx4jMslzNyL8DcK3H87Wu2cIdKF1nsmt" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="40" offsetLabelY="0" posX="320" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.folder_contextfile"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Talend_8&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+      <elementValue elementRef="TRIM" value="true" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+      <elementValue elementRef="TRIM" value="true" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Context Datei"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Info"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Context laden"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="680">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-641" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;_where&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;start_entry_check_datetime != null and start_entry_check_datetime > datetime:\&quot;now\&quot; and start_entry_check_datetime &lt; DATEADD(\&quot;now\&quot;, \&quot;+7 days\&quot;) and start_entry_check_datetime > DATEADD(\&quot;now\&quot;, \&quot;-4 hours\&quot;) and entry_url != \&quot;\&quot; and &quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SAML"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.tocco_user"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:2l10URidxiOvMof/bh6ysAMTD2KMbZjp1rYHbf6lN2pFW5TBg5TPej77H97ycqGezeY="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="true" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_HTTP_VERSION_TO_1_1" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;x-business-unit&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;XXX_ch&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:SnvS9qa3XO1JqEgf2BGD7EfEvynuzxMWKgJwmOZj" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tocco registrations"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Extrahiert von alle Anmeldungen von Events deren Startzeit gesetzt ist und innerhalb der nächsten 7 Tage ist und /oder weniger als 4h zurückliegt&#xD;&#xA;... den pk&#xD;&#xA;... die version&#xD;&#xA;... die entry_url&#xD;&#xA;... ticket_id&#xD;&#xA;&#xD;&#xA;pk und version werden genutzt um den tocco Datensatz updaten zu können, entry_url um das OS-Sheet der jeweiligen Veranstaltung abzurufen.&#xD;&#xA;Die ticket_id wird verwendet um den Status aus OS dem Datensatz zuordnen zu können."/>
+    <metadata connector="FLOW" name="tRESTClient_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-480" posY="320" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_3" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplicate_3">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-360" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-240" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="copyOfout1">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="orca_url" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row6" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row6/statusCode" objID="n1750211472"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row6/body" objID="n1317469102">
+          <children name="root" type="id_String" xpath="row6.body:/root" main="true" objID="n1346646481">
+            <children name="_links" type="id_String" xpath="row6.body:/root/_links" objID="n1317103831">
+              <children name="next" type="id_String" xpath="row6.body:/root/_links/next" objID="n1921045061"/>
+              <children name="prev" type="id_String" xpath="row6.body:/root/_links/prev" objID="n1444890093"/>
+              <children name="entity-model-list" type="id_String" xpath="row6.body:/root/_links/entity-model-list" objID="n1880008004">
+                <children name="href" type="id_String" xpath="row6.body:/root/_links/entity-model-list/href" objID="n1963329238"/>
+              </children>
+              <children name="form-search" type="id_String" xpath="row6.body:/root/_links/form-search" objID="n1967622786">
+                <children name="href" type="id_String" xpath="row6.body:/root/_links/form-search/href" objID="n1788310127"/>
+              </children>
+              <children name="form-list" type="id_String" xpath="row6.body:/root/_links/form-list" objID="n1931075719">
+                <children name="href" type="id_String" xpath="row6.body:/root/_links/form-list/href" objID="n483307666"/>
+              </children>
+              <children name="form-detail" type="id_String" xpath="row6.body:/root/_links/form-detail" objID="n1538814139">
+                <children name="href" type="id_String" xpath="row6.body:/root/_links/form-detail/href" objID="n2094923662"/>
+              </children>
+              <children name="self" type="id_String" xpath="row6.body:/root/_links/self" objID="n1309679076">
+                <children name="href" type="id_String" xpath="row6.body:/root/_links/self/href" objID="n261345218"/>
+              </children>
+            </children>
+            <children name="metaData" type="id_String" xpath="row6.body:/root/metaData" objID="n2132332283">
+              <children name="modelName" type="id_String" xpath="row6.body:/root/metaData/modelName" objID="n220617758"/>
+              <children name="label" type="id_String" xpath="row6.body:/root/metaData/label" objID="n74602243"/>
+              <children name="entityType" type="id_String" xpath="row6.body:/root/metaData/entityType" objID="n801570892"/>
+            </children>
+            <children name="data" type="id_String" xpath="row6.body:/root/data" loop="true" main="true" objID="n872980131">
+              <children name="_links" type="id_String" xpath="row6.body:/root/data/_links" objID="n684332367">
+                <children name="self" type="id_String" xpath="row6.body:/root/data/_links/self" objID="n801915544">
+                  <children name="href" type="id_String" xpath="row6.body:/root/data/_links/self/href" objID="n892004008"/>
+                </children>
+                <children name="model" type="id_String" xpath="row6.body:/root/data/_links/model" objID="n1901243755">
+                  <children name="href" type="id_String" xpath="row6.body:/root/data/_links/model/href" objID="n2066996120"/>
+                </children>
+                <children name="entity-list" type="id_String" xpath="row6.body:/root/data/_links/entity-list" objID="n1328333878">
+                  <children name="href" type="id_String" xpath="row6.body:/root/data/_links/entity-list/href" objID="n545403782"/>
+                </children>
+                <children name="default-display" type="id_String" xpath="row6.body:/root/data/_links/default-display" objID="n1905641114">
+                  <children name="href" type="id_String" xpath="row6.body:/root/data/_links/default-display/href" objID="n1637339717"/>
+                </children>
+                <children name="entity-model-list" type="id_String" xpath="row6.body:/root/data/_links/entity-model-list" objID="n682051010">
+                  <children name="href" type="id_String" xpath="row6.body:/root/data/_links/entity-model-list/href" objID="n1706971850"/>
+                </children>
+              </children>
+              <children name="key" type="id_Integer" xpath="row6.body:/root/data/key" objID="n819603406"/>
+              <children name="model" type="id_String" xpath="row6.body:/root/data/model" objID="n761480577"/>
+              <children name="version" type="id_Integer" xpath="row6.body:/root/data/version" objID="n957822145"/>
+              <children name="paths" expression="" type="id_String" xpath="row6.body:/root/data/paths" objID="n537685997">
+                <children name="entry_url" type="id_String" xpath="row6.body:/root/data/paths/entry_url" objID="n1286711941">
+                  <children name="type" type="id_String" xpath="row6.body:/root/data/paths/entry_url/type" objID="n1143890262"/>
+                  <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/entry_url/writable" objID="n750550618"/>
+                  <children name="value" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row6.body:/root/data/paths/entry_url/value" objID="n363687874"/>
+                </children>
+                <children name="relRegistration" type="id_String" xpath="row6.body:/root/data/paths/relRegistration" objID="n464318380">
+                  <children name="type" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/type" objID="n2097526211"/>
+                  <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/writable" objID="n447190289"/>
+                  <children name="value" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value" objID="n1036948948">
+                    <children name="_links" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links" objID="n1577956582">
+                      <children name="self" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/self" objID="n154178894">
+                        <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/self/href" objID="n549782223"/>
+                      </children>
+                      <children name="model" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/model" objID="n513304607">
+                        <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/model/href" objID="n1783495687"/>
+                      </children>
+                      <children name="entity-list" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/entity-list" objID="n1860290130">
+                        <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/entity-list/href" objID="n1466256091"/>
+                      </children>
+                      <children name="default-display" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/default-display" objID="n1012181941">
+                        <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/default-display/href" objID="n898772170"/>
+                      </children>
+                      <children name="entity-model-list" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/entity-model-list" objID="n1640262058">
+                        <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/_links/entity-model-list/href" objID="n861042794"/>
+                      </children>
+                    </children>
+                    <children name="key" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/key" objID="n803661176"/>
+                    <children name="model" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/model" objID="n321517322"/>
+                    <children name="version" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/version" objID="n347318828"/>
+                    <children name="paths" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths" objID="n680440905">
+                      <children name="ticket_id" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/ticket_id" objID="n1137557527">
+                        <children name="type" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/ticket_id/type" objID="n1002370134"/>
+                        <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/ticket_id/writable" objID="n1690742166"/>
+                        <children name="value" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/ticket_id/value" objID="n221182773"/>
+                      </children>
+                      <children name="version" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/version" objID="n1656841071">
+                        <children name="type" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/version/type" objID="n24165069"/>
+                        <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/version/writable" objID="n1453987274"/>
+                        <children name="value" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/paths/version/value" objID="n549158417"/>
+                      </children>
+                      <children name="relUser" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser" objID="n824967164">
+                        <children name="type" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/type" objID="n1721970664"/>
+                        <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/writable" objID="n2097716974"/>
+                        <children name="value" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value" objID="n1369279962">
+                          <children name="_links" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links" objID="n1238276897">
+                            <children name="self" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/self" objID="n2124933309">
+                              <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/self/href" objID="n1021150036"/>
+                            </children>
+                            <children name="model" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/model" objID="n1706900630">
+                              <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/model/href" objID="n808489696"/>
+                            </children>
+                            <children name="entity-list" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-list" objID="n1771839552">
+                              <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-list/href" objID="n2054091437"/>
+                            </children>
+                            <children name="default-display" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/default-display" objID="n90451052">
+                              <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/default-display/href" objID="n2106202081"/>
+                            </children>
+                            <children name="entity-model-list" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-model-list" objID="n1219481426">
+                              <children name="href" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-model-list/href" objID="n955845981"/>
+                            </children>
+                          </children>
+                          <children name="key" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/key" objID="n71997022"/>
+                          <children name="model" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/model" objID="n598771200"/>
+                          <children name="version" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/version" objID="n972325424"/>
+                          <children name="paths" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths" objID="n1084050877">
+                            <children name="user_nr" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr" objID="n1480378791">
+                              <children name="type" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/type" objID="n1927561151"/>
+                              <children name="writable" type="id_String" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/writable" objID="n385720259"/>
+                              <children name="value" type="id_Integer" xpath="row6.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/value" objID="n297058072"/>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+                <children name="comment" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row6.body:/root/data/paths/comment" objID="n1074673367"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row6/string" objID="n1272385509"/>
+      </inputTrees>
+      <outputTrees name="copyOfout1">
+        <nodes name="entry_url" expression="StringFunc.Replace([row6.body:/root/data/paths/entry_url/value],&quot;cloud&quot;,&quot;api&quot;) " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="copyOfout1/entry_url" objID="n457657705"/>
+        <nodes name="orca_url" expression="StringFunc.Replace([row6.body:/root/data/paths/comment],&quot;text&quot;,&quot;&quot;) " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="copyOfout1/orca_url" objID="n1807642965"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n363687874" target="n457657705"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1074673367" target="n1807642965"/>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-120" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="entry_url"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tHashOutput_1">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="orca_url" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-240" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out3" name="out3">
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="version" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row7" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row7/statusCode" objID="n612931020"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row7/body" objID="n1120272091">
+          <children name="root" type="id_String" xpath="row7.body:/root" main="true" objID="n557289400">
+            <children name="_links" type="id_String" xpath="row7.body:/root/_links" objID="n1198574812">
+              <children name="next" type="id_String" xpath="row7.body:/root/_links/next" objID="n1474354152"/>
+              <children name="prev" type="id_String" xpath="row7.body:/root/_links/prev" objID="n442682156"/>
+              <children name="entity-model-list" type="id_String" xpath="row7.body:/root/_links/entity-model-list" objID="n635651734">
+                <children name="href" type="id_String" xpath="row7.body:/root/_links/entity-model-list/href" objID="n149146650"/>
+              </children>
+              <children name="form-search" type="id_String" xpath="row7.body:/root/_links/form-search" objID="n1315193451">
+                <children name="href" type="id_String" xpath="row7.body:/root/_links/form-search/href" objID="n1784901747"/>
+              </children>
+              <children name="form-list" type="id_String" xpath="row7.body:/root/_links/form-list" objID="n1728688118">
+                <children name="href" type="id_String" xpath="row7.body:/root/_links/form-list/href" objID="n1217043585"/>
+              </children>
+              <children name="form-detail" type="id_String" xpath="row7.body:/root/_links/form-detail" objID="n1958972373">
+                <children name="href" type="id_String" xpath="row7.body:/root/_links/form-detail/href" objID="n2056544154"/>
+              </children>
+              <children name="self" type="id_String" xpath="row7.body:/root/_links/self" objID="n2049186274">
+                <children name="href" type="id_String" xpath="row7.body:/root/_links/self/href" objID="n345926028"/>
+              </children>
+            </children>
+            <children name="metaData" type="id_String" xpath="row7.body:/root/metaData" objID="n143577313">
+              <children name="modelName" type="id_String" xpath="row7.body:/root/metaData/modelName" objID="n357440067"/>
+              <children name="label" type="id_String" xpath="row7.body:/root/metaData/label" objID="n1566753524"/>
+              <children name="entityType" type="id_String" xpath="row7.body:/root/metaData/entityType" objID="n1471331816"/>
+            </children>
+            <children name="data" type="id_String" xpath="row7.body:/root/data" main="true" objID="n937501568">
+              <children name="_links" type="id_String" xpath="row7.body:/root/data/_links" objID="n497402833">
+                <children name="self" type="id_String" xpath="row7.body:/root/data/_links/self" objID="n1085355342">
+                  <children name="href" type="id_String" xpath="row7.body:/root/data/_links/self/href" objID="n456950775"/>
+                </children>
+                <children name="model" type="id_String" xpath="row7.body:/root/data/_links/model" objID="n1455508871">
+                  <children name="href" type="id_String" xpath="row7.body:/root/data/_links/model/href" objID="n1964087529"/>
+                </children>
+                <children name="entity-list" type="id_String" xpath="row7.body:/root/data/_links/entity-list" objID="n1130564900">
+                  <children name="href" type="id_String" xpath="row7.body:/root/data/_links/entity-list/href" objID="n2004136159"/>
+                </children>
+                <children name="default-display" type="id_String" xpath="row7.body:/root/data/_links/default-display" objID="n844376493">
+                  <children name="href" type="id_String" xpath="row7.body:/root/data/_links/default-display/href" objID="n509535551"/>
+                </children>
+                <children name="entity-model-list" type="id_String" xpath="row7.body:/root/data/_links/entity-model-list" objID="n835023454">
+                  <children name="href" type="id_String" xpath="row7.body:/root/data/_links/entity-model-list/href" objID="n691816140"/>
+                </children>
+              </children>
+              <children name="key" type="id_Integer" xpath="row7.body:/root/data/key" objID="n1541121208"/>
+              <children name="model" type="id_String" xpath="row7.body:/root/data/model" objID="n1716339209"/>
+              <children name="version" type="id_Integer" xpath="row7.body:/root/data/version" objID="n135375988"/>
+              <children name="paths" type="id_String" xpath="row7.body:/root/data/paths" main="true" objID="n1409806836">
+                <children name="entry_url" type="id_String" xpath="row7.body:/root/data/paths/entry_url" objID="n25486789">
+                  <children name="type" type="id_String" xpath="row7.body:/root/data/paths/entry_url/type" objID="n391003888"/>
+                  <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/entry_url/writable" objID="n1274937680"/>
+                  <children name="value" type="id_String" xpath="row7.body:/root/data/paths/entry_url/value" objID="n1284253311"/>
+                </children>
+                <children name="relRegistration" type="id_String" xpath="row7.body:/root/data/paths/relRegistration" loop="true" main="true" objID="n1881464467">
+                  <children name="type" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/type" objID="n1571114031"/>
+                  <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/writable" objID="n1048734697"/>
+                  <children name="value" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value" objID="n494220794">
+                    <children name="_links" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links" objID="n1314006368">
+                      <children name="self" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/self" objID="n2084939035">
+                        <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/self/href" objID="n1832495908"/>
+                      </children>
+                      <children name="model" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/model" objID="n1187384423">
+                        <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/model/href" objID="n1798117048"/>
+                      </children>
+                      <children name="entity-list" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/entity-list" objID="n459383051">
+                        <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/entity-list/href" objID="n204893224"/>
+                      </children>
+                      <children name="default-display" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/default-display" objID="n17035601">
+                        <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/default-display/href" objID="n962595534"/>
+                      </children>
+                      <children name="entity-model-list" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/entity-model-list" objID="n2097762625">
+                        <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/_links/entity-model-list/href" objID="n994013608"/>
+                      </children>
+                    </children>
+                    <children name="key" type="id_Integer" outgoingConnections="//@node.9/@nodeData/@connections.0" xpath="row7.body:/root/data/paths/relRegistration/value/key" objID="n1859788008"/>
+                    <children name="model" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/model" objID="n741936563"/>
+                    <children name="version" type="id_Integer" outgoingConnections="//@node.9/@nodeData/@connections.1" xpath="row7.body:/root/data/paths/relRegistration/value/version" objID="n1618054506"/>
+                    <children name="paths" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths" objID="n1286090008">
+                      <children name="ticket_id" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/ticket_id" objID="n977884285">
+                        <children name="type" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/ticket_id/type" objID="n2045273082"/>
+                        <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/ticket_id/writable" objID="n708520907"/>
+                        <children name="value" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.2" xpath="row7.body:/root/data/paths/relRegistration/value/paths/ticket_id/value" objID="n2061874691"/>
+                      </children>
+                      <children name="version" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/version" objID="n1810677763">
+                        <children name="type" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/version/type" objID="n857191978"/>
+                        <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/version/writable" objID="n1838769132"/>
+                        <children name="value" type="id_Integer" xpath="row7.body:/root/data/paths/relRegistration/value/paths/version/value" objID="n1406817719"/>
+                      </children>
+                      <children name="relUser" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser" objID="n1787159503">
+                        <children name="type" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/type" objID="n1089566838"/>
+                        <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/writable" objID="n2096795866"/>
+                        <children name="value" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value" objID="n1874688179">
+                          <children name="_links" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links" objID="n47180092">
+                            <children name="self" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/self" objID="n566869263">
+                              <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/self/href" objID="n564607006"/>
+                            </children>
+                            <children name="model" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/model" objID="n1964059723">
+                              <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/model/href" objID="n1089838379"/>
+                            </children>
+                            <children name="entity-list" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-list" objID="n1593253280">
+                              <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-list/href" objID="n1709028828"/>
+                            </children>
+                            <children name="default-display" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/default-display" objID="n1868218475">
+                              <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/default-display/href" objID="n1826580426"/>
+                            </children>
+                            <children name="entity-model-list" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-model-list" objID="n212654201">
+                              <children name="href" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/_links/entity-model-list/href" objID="n1702930540"/>
+                            </children>
+                          </children>
+                          <children name="key" type="id_Integer" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/key" objID="n55484025"/>
+                          <children name="model" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/model" objID="n1038725284"/>
+                          <children name="version" type="id_Integer" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/version" objID="n107566879"/>
+                          <children name="paths" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths" objID="n1585741846">
+                            <children name="user_nr" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr" objID="n1231054567">
+                              <children name="type" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/type" objID="n1283152467"/>
+                              <children name="writable" type="id_String" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/writable" objID="n1048813767"/>
+                              <children name="value" type="id_Integer" xpath="row7.body:/root/data/paths/relRegistration/value/paths/relUser/value/paths/user_nr/value" objID="n2028901210"/>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row7/string" objID="n17937998"/>
+      </inputTrees>
+      <outputTrees name="out3">
+        <nodes name="key" expression="[row7.body:/root/data/paths/relRegistration/value/key]" type="id_Integer" incomingConnections="//@node.9/@nodeData/@connections.0" xpath="out3/key" objID="n292898655"/>
+        <nodes name="version" expression="[row7.body:/root/data/paths/relRegistration/value/version]" type="id_Integer" incomingConnections="//@node.9/@nodeData/@connections.1" xpath="out3/version" objID="n162719393"/>
+        <nodes name="value" expression="[row7.body:/root/data/paths/relRegistration/value/paths/ticket_id/value]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.2" xpath="out3/value" objID="n70175646"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1859788008" target="n292898655"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1618054506" target="n162719393"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2061874691" target="n70175646"/>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="-9" offsetLabelY="-1" posX="-120" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tocco registrations"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out3" name="tHashOutput_2">
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="version" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="entry_url"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_3">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="orca_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="entry_url" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="orca_url" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_6">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="orca_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="entry_url" id="0"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row14.entry_url&quot;)" id="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="entry_url" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="(String)globalMap.get(&quot;row17.orca_url&quot;) + &quot;.json&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;columns&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;Barcode,Anwesend&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OAUTH2_BEARER" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:2GbClQS03RYXPKpGjuTrTcmM1qGzvjeE8gC2c96EI3PULkvhALs=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;orca_1UcDPqQ1JPbIZ3gTIfqlYHNtugM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="true" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_HTTP_VERSION_TO_1_1" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:vPrjG6g8xiH/Hf7JVob/yKow7Tc6jCa/H2EUf2Io" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="orcascan attendance"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="entry_url des tocco Datensatzes wird verwendet um OS-Sheet zu requesten; Anwesenheitsstatus und Barcode werden extrahiert"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KCR68JUmEe-aRYAgX1Tb0g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="clean_string2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="location_number">
+      <column comment="" key="false" length="-1" name="location_number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="row13.string.replaceFirst(&quot;.*\\|\\|\\s*&quot;, &quot;&quot;)" type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="location_number">
+        <mapperTableEntries name="location_number" expression="Var.var1 " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row13" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="statusCode" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="body" type="id_Document" nullable="true"/>
+        <mapperTableEntries name="string" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="location_number"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/items/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="barcode" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;location_number&quot;" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="barcode" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;Barcode&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;Anwesend&quot;" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="extract_location"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="-1" name="barcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="barcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_7" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="barcode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_7">
+      <column comment="" key="false" length="-1" name="barcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="update_tocco" name="update_tocco">
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="version" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" key="false" length="-1" name="entry_url" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="barcode" type="id_String" xpath="row2/barcode" lookupOutgoingConnections="//@node.21/@nodeData/@connections.0" objID="n1640913654"/>
+        <nodes name="status" type="id_Boolean" outgoingConnections="//@node.21/@nodeData/@connections.3" xpath="row2/status" objID="n1729677595"/>
+      </inputTrees>
+      <inputTrees name="row3" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <nodes name="key" type="id_Integer" outgoingConnections="//@node.21/@nodeData/@connections.1" xpath="row3/key" objID="n783708481"/>
+        <nodes name="version" type="id_Integer" outgoingConnections="//@node.21/@nodeData/@connections.2" xpath="row3/version" objID="n260575268"/>
+        <nodes name="value" expression="row2.barcode" type="id_String" xpath="row3/value" lookupIncomingConnections="//@node.21/@nodeData/@connections.0" objID="n1019844453"/>
+      </inputTrees>
+      <outputTrees expressionFilter="" name="update_tocco">
+        <nodes name="key" expression="row3.key" type="id_Integer" incomingConnections="//@node.21/@nodeData/@connections.1" xpath="update_tocco/key" objID="n1513889794"/>
+        <nodes name="version" expression="row3.version" type="id_Integer" incomingConnections="//@node.21/@nodeData/@connections.2" xpath="update_tocco/version" pattern="" objID="n155391104"/>
+        <nodes name="status" expression="row2.status  ? 9 : 2" type="id_Integer" incomingConnections="//@node.21/@nodeData/@connections.3" xpath="update_tocco/status" pattern="" objID="n152789262"/>
+      </outputTrees>
+      <outputTrees name="out1">
+        <nodes name="entry_url" expression="[row7.body:/root/data/paths/entry_url/value]" type="id_String" xpath="out1/entry_url" objID="n195591772"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n1640913654" target="n1019844453"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n783708481" target="n1513889794"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n260575268" target="n155391104"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1729677595" target="n152789262"/>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tocco registrations"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="version" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="string"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/root" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="1" id="4"/>
+      <elementValue elementRef="PATH" value="/root/key" id="5"/>
+      <elementValue elementRef="COLUMN" value="key" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
+      <elementValue elementRef="ORDER" value="2" id="9"/>
+      <elementValue elementRef="PATH" value="/root/version" id="10"/>
+      <elementValue elementRef="COLUMN" value="version" id="11"/>
+      <elementValue elementRef="VALUE" value="" id="12"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
+      <elementValue elementRef="ORDER" value="3" id="14"/>
+      <elementValue elementRef="PATH" value="/root/paths" id="15"/>
+      <elementValue elementRef="COLUMN" value="" id="16"/>
+      <elementValue elementRef="VALUE" value="" id="17"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="18"/>
+      <elementValue elementRef="ORDER" value="4" id="19"/>
+      <elementValue elementRef="PATH" value="/root/paths/relRegistration_status" id="20"/>
+      <elementValue elementRef="COLUMN" value="" id="21"/>
+      <elementValue elementRef="VALUE" value="" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="23"/>
+      <elementValue elementRef="ORDER" value="5" id="24"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/root/paths/relRegistration_status/key" id="0"/>
+      <elementValue elementRef="COLUMN" value="status" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="6" id="4"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
+    <elementParameter field="CHECK" name="USE_SCIENTIFIC_NOTATION" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="update_tocco" name="tWriteJSONField_1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_8" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="update_tocco" name="tLogRow_8">
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_4" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;" id="1"/>
+      <elementValue elementRef="NAME" value="&quot;_omitLinks&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;true&quot;" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.tocco_user"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:y9kpNrsNcbU5asKqtH0ODrSpxLq06/cadmCnzDQftS9u/HuGDGlaowNmRUsfKWjimpc="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="true"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="true"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="true"/>
+    <elementParameter field="CHECK" name="FORCE_HTTP_VERSION_TO_1_1" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;X-Business-Unit&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;XXX_CH&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:OHPqeayazoFl81jMYVAYSZfTUX7xG04tKeX+wkrO" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="update_tocco" name="tRESTClient_4">
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="display response status"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="errors"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_5">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="2" offsetLabelY="-21" source="tFileInputDelimited_1" target="tContextLoad_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="value" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="key" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row8" lineStyle="0" metaname="tRESTClient_2" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_2" target="tReplicate_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRESTClient_2" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_2" target="tHashInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tReplicate_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_3" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tReplicate_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_3" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tXMLMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout1" lineStyle="0" metaname="copyOfout1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tHashOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tHashOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tLogRow_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="orca_url" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tRESTClient_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="location_number" lineStyle="0" metaname="location_number" offsetLabelX="50" offsetLabelY="-1" source="tMap_1" target="tExtractJSONFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="location_number" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tLogRow_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_7" offsetLabelX="0" offsetLabelY="0" source="tLogRow_7" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="update_tocco" lineStyle="0" metaname="update_tocco" offsetLabelX="-11" offsetLabelY="0" source="tXMLMap_1" target="tWriteJSONField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="update_tocco" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="version" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="value" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="key" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tLogRow_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_8" offsetLabelX="0" offsetLabelY="0" source="tLogRow_8" target="tRESTClient_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row9" lineStyle="0" metaname="RESPONSE" offsetLabelX="9" offsetLabelY="-2" outputId="1" source="tRESTClient_4" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FAULT" label="row10" lineStyle="0" metaname="FAULT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTClient_4" target="tLogRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

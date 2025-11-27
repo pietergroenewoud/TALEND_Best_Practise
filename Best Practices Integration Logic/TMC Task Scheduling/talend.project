@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_Tg85YJ0VEfC-oNSHQ5v5TQ" label="best_practices_task_scheduling" description="" language="java" technicalLabel="BEST_PRACTICES_TASK_SCHEDULING" local="true" author="_Tg85YZ0VEfC-oNSHQ5v5TQ" productVersion="Talend Cloud Data Integration-8.0.1.20250927_1321-patch" type="DI" itemsRelationVersion="1.3" bigData="false">
-    <migrationTask xmi:id="_TiWnkJ0VEfC-oNSHQ5v5TQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
-  </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_Tg85YZ0VEfC-oNSHQ5v5TQ" login="karlhotz41@gmail.com"/>
-</xmi:XMI>
